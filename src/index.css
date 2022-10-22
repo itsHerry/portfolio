@@ -352,6 +352,13 @@
     font-size: 10px;
   }
 
+  .specialContainer {
+    width: 15rem;
+  }
+  .border {
+    margin-left: 1em;
+  }
+
   .semi-circle {
     height: 70vmin;
     width: 60vmin;
@@ -359,6 +366,34 @@
   .links {
     height: 13vmin;
     width: 13vmin;
+  }
+
+  @keyframes wiggle {
+    0% {
+      width: 14rem;
+    }
+    20% {
+      width: 14rem;
+    }
+    30% {
+      width: 12rem;
+    }
+    40% {
+      width: 12rem;
+    }
+    60% {
+      width: 14rem;
+    }
+    65% {
+      width: 14rem;
+    }
+    85% {
+      width: 12rem;
+    }
+
+    100% {
+      width: 14rem;
+    }
   }
 
   @keyframes showMenu {
