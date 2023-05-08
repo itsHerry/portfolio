@@ -1,0 +1,111 @@
+#about {
+  background-image: linear-gradient(90deg, #1f4037, #99f2c8);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.about-me {
+  display: grid;
+  justify-content: center;
+  height: 70vmin;
+  width: 70vmin;
+  color: white;
+  text-align: center;
+  transition: box-shadow 300ms;
+  border-radius: 300px 300px 8px 8px;
+  box-shadow: 0 0 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.my-profile {
+  margin-top: 3vmin;
+  height: 20vmin;
+  width: 20vmin;
+  border-radius: 50%;
+  box-shadow: 0 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  padding: 1em;
+  margin-top: -1em;
+}
+
+.my-name {
+  margin-bottom: 0.5em;
+  padding-bottom: 0.2em;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.accounts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.account-link {
+  display: grid;
+  place-content: center;
+  height: 7vmin;
+  width: 7vmin;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  transition: box-shadow 300ms;
+}
+
+.about-me:hover {
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.account-link:hover {
+  box-shadow: 0 0 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1050px) {
+  .about-me {
+    margin-left: 10em;
+  }
+  .bio {
+    font-size: 1.5rem;
+  }
+  .my-name {
+    font-size: 2.5rem;
+  }
+  .account-link {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-me {
+    height: 80vmin;
+    width: 80vmin;
+    margin-left: 0;
+  }
+  .my-name {
+    margin-bottom: 1em;
+    font-size: 3.5rem;
+  }
+  .bio {
+    margin-top: 1em;
+    font-size: 2rem;
+  }
+}
+
+/* For Smartphones */
+@media (max-width: 500px) {
+  .about-me {
+    height: 90vmin;
+    width: 90vmin;
+  }
+  .my-name {
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+  }
+  .bio {
+    margin-top: 0em;
+    font-size: 1.5rem;
+  }
+}
